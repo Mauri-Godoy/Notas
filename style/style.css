@@ -1,0 +1,231 @@
+body {
+    /* Font */
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+main {
+    /* Flex */
+    display: flex;
+    /* Altura */
+    height: 100vh;
+    /* background */
+    background-image: url(https://cdn.pixabay.com/photo/2013/01/28/22/57/girl-76508_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Ingreso de datos */
+
+#section-form {
+    /* Background  */
+    background-image: url(https://cdn.pixabay.com/photo/2019/03/20/03/39/draw-4067546_960_720.png);
+    background-position: center 18%;
+    background-repeat: no-repeat;
+    background-size: 22vh;
+    /* background */
+    background-color: rgba(255, 255, 255, 0.959);
+    /* Largo */
+    width: 25%;
+    height: 75%;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    /* position*/
+    margin-left: 2em;
+    padding: 1em;
+    /* border */
+    border-radius: 10px;
+}
+
+
+/* Form */
+
+#section-form form {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-form input,
+#section-form textarea {
+    /* Position */
+    margin-bottom: 1rem;
+    /* size */
+    width: 80%;
+    /* style */
+    border: none;
+    border-bottom: 2px solid #000;
+    resize: none;
+    background-color: transparent;
+}
+
+#section-form form button {
+    /* style */
+    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#section-form form button:hover {
+    background-color: #8bc3c7;
+    transition: ease-in .3s;
+}
+
+
+/* selector de background */
+
+.background-radio {
+    /* flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* size*/
+    width: 100%;
+}
+
+.background-radio fieldset {
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    /* style */
+    border: none;
+    /* size */
+    width: 100%;
+}
+
+.background-radio img {
+    /* size */
+    width: 80%;
+    /* style */
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.background-radio input {
+    display: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.background-radio img:hover {
+    box-shadow: 0px 0px 1px 4px #8bc3c7;
+    transition: ease-in, .3s;
+    transform: scale(1.1);
+    transform: translate(0, -10%);
+}
+
+
+/* Pizzarra */
+
+#section-notes {
+    /* size */
+    width: 75%;
+    max-height: 100vh;
+    /* flex */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    /* scroll */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    /* position */
+    text-align: center;
+}
+
+
+/* notas */
+
+.divNote {
+    /* size */
+    width: 8.5em;
+    height: 9.5em;
+    /* style */
+    box-shadow: -3px 5px 7px 5px rgba(0, 0, 0, 0.644);
+    border-radius: 3px;
+    /* text */
+    font-size: 1.2em;
+}
+
+.divNote:hover {
+    transform: scale(1.1)!important;
+    transition: ease-in, .2s;
+    z-index: 10;
+}
+
+.divNote img {
+    /* position */
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    /* size */
+    width: 35px;
+}
+
+
+/* boton nota */
+
+#section-notes .buttonDelete {
+    /* position */
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    /* style */
+    border-style: unset;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#section-notes .buttonDelete:hover {
+    background-color: #8a1717af;
+    transition: ease-in .1s;
+}
+
+
+/* textarea */
+
+#section-notes .textNote {
+    cursor: pointer;
+    background: none;
+    border: none;
+    resize: none;
+    margin-left: .1em;
+}
+
+
+/* text */
+
+h3 {
+    /* position */
+    margin: 0.7em 0 0 0;
+    text-align: center;
+}
+
+
+/* media */
+
+@media (max-width: 800px) {
+    #section-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    #section-form {
+        width: 60%;
+    }
+}

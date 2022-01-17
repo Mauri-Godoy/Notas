@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Notas</title>
+</head>
+
+<body>
+    <main id="main">
+
+        <section id="section-form">
+            <h1>Dejá tu mensaje</h1>
+            <form>
+                <input type="text" placeholder="Título" id="title" maxlength="9">
+                <textarea name="text" id="note" cols="30" rows="3" maxlength="72" placeholder="Escribí acá el contenido de tu nota!" required></textarea>
+                <button type="button" onclick="createNote()">Enviar!</button>
+                <div class="background-radio">
+                    <h2>Elegíte un background</h2>
+                    <fieldset>
+                        <input type="radio" name="background" id="background" value="background" onchange="changeBackground()" checked><label for="background"><img
+                                src="https://cdn.pixabay.com/photo/2013/01/28/22/57/girl-76508_960_720.jpg"
+                                alt="background 1"></label>
+                        <input type="radio" name="background" id="background2" value="background2" onchange="changeBackground()"><label for="background2"><img
+                                src="https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg"
+                                alt="background 2"></label>
+                        <input type="radio" name="background" id="background3" value="background3" onchange="changeBackground()"><label for="background3"><img
+                                src="https://cdn.pixabay.com/photo/2016/07/05/22/43/street-art-1499524_960_720.jpg"
+                                alt="background 3"></label>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+        <section id="section-notes"></section>
+
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
