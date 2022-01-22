@@ -1,3 +1,3 @@
 # Notas
-Ejercicio de MindHub en el modulo de Js
+Ejercicio de MindHub
 https://mauri-godoy.github.io/Notas/index.html
